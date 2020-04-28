@@ -1,4 +1,4 @@
-Feature: Hear
+Feature: Hear Today
 
   Shouts have a range up to 1000m
 
