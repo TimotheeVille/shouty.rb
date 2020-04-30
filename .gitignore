@@ -1,2 +1,7 @@
 Gemfile.lock
 .idea/
+node_modules/
+
+*.ndjson
+*.messages
+results.json
