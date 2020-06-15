@@ -8,7 +8,7 @@ Feature: Hear Shout
     When Sean shouts
     Then Lucy should hear Sean
 
-  Scenario: Out of range shout is not heard
+  Scenario: Out of range shout may not be heard
     Given Lucy is at 0, 0
     And Sean is at 800, 800
     When Sean shouts
