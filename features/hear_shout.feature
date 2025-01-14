@@ -17,6 +17,5 @@ Feature: Hear Shout
 
   Scenario: At range limit, shout is heard
     Given Lucy
-    And Sean
     When Sean shouts
     Then Lucy
