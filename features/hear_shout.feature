@@ -14,3 +14,9 @@ Feature: Hear Shout
     And Sean is at 800, 800
     When Sean shouts
     Then Lucy should hear nothing
+
+  Scenario: At range limit, shout is heard
+    Given Lucy
+    And Sean
+    When Sean shouts
+    Then Lucy
