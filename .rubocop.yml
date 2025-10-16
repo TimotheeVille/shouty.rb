@@ -1,0 +1,51 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  Exclude:
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+
+RSpec:
+  Language:
+    ExampleGroups:
+      - describe
+      - context
+  ExampleLength:
+    Max: 10
+  MultipleExpectations:
+    Enabled: true
+    Max: 2
+    # Allow a second expectation when reinforcing same outcome.
+  Focus:
+    Enabled: true
+  EmptyExampleGroup:
+    Enabled: true
+  MissingExampleGroupArgument:
+    Enabled: true
+  DescribeClass:
+    Enabled: true
+  FilePath:
+    Enabled: true
+  NamedSubject:
+    Enabled: false
+  LetSetup:
+    Enabled: true
+  HookArgument:
+    Enabled: true
+  LetBeforeDefinition:
+    Enabled: true
+  PendingWithoutReason:
+    Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+  ConsistentQuotesInMultiline: true
+
+Metrics/MethodLength:
+  Max: 15
+
+Layout/LineLength:
+  Max: 100

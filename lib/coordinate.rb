@@ -7,9 +7,12 @@ class Coordinate
   end
 
   def distance_from(other)
-    # TODO: actually calculate distance between the coordinates.
-    #       e.g. (@x - other.x).abs
-
-    0
+    # Calculate Euclidean distance between two coordinates.
+    # NOTE: If only axis-aligned distances are needed, this can be simplified,
+    # but specs include diagonal expectation.
+    dx = (@x - other.x).abs
+    dy = (@y - other.y).abs
+    return 0 if dx.zero? && dy.zero?
+    Math.sqrt(dx * dx + dy * dy).to_i
   end
 end
