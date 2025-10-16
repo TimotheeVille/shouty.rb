@@ -53,10 +53,8 @@ describe Shouty do
       network.set_location(lucy, origin)
     end
 
-    context 'when no shouts exist' do
-      it 'returns empty hash' do
-        expect(network.shouts_heard_by(lucy)).to eq({})
-      end
+    it 'returns empty hash when no shouts exist' do
+      expect(network.shouts_heard_by(lucy)).to eq({})
     end
 
     context 'with in-range shouter' do
